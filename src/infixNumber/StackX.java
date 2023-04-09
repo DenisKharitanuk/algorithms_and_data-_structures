@@ -1,16 +1,14 @@
-package infix;
-
-import com.sun.scenario.effect.impl.state.AccessHelper;
+package infixNumber;
 
 public class StackX {
     private int maxSize;
-    private char[] stackArray;
+    private int[] stackArray;
     private int top;
 
 
-    public StackX(int s) {
-        maxSize = s;
-        stackArray = new char[maxSize];
+    public StackX(int size) {
+        maxSize = size;
+        stackArray = new int[maxSize];
         top = -1;
     }
 
@@ -19,11 +17,11 @@ public class StackX {
 
     }
 
-    protected char pop() {
+    protected int pop() {
         return stackArray[top--];
     }
 
-    protected char peek() {
+    protected int peek() {
         return stackArray[top];
     }
 
@@ -34,7 +32,7 @@ public class StackX {
         return top + 1;
     }
 
-    protected char peekN(int n) {
+    protected int peekN(int n) {
         return stackArray[n];
     }
     protected  void desplayStack(String s){

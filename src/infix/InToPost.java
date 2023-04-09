@@ -35,7 +35,7 @@ public class InToPost {
                     break;
             }
         }
-        while ((!theStack.isEmpty())) {
+        while (!theStack.isEmpty()) {
             theStack.desplayStack("While");
             output = output + theStack.pop();
         }
@@ -46,12 +46,12 @@ public class InToPost {
     protected void gotOper(char opThis, int prec1) {
         while (!theStack.isEmpty()) {
             char opTop = theStack.pop();
-            if (opTop == '(') {
+            if (opTop == '(' ) {
                 theStack.push(opTop);
                 break;
             } else {
                 int prec2;
-                if (opThis == '+' || opTop == '-')
+                if (opTop == '+' || opTop == '-')
                     prec2 = 1;
                 else
                     prec2 = 2;
