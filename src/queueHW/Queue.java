@@ -50,7 +50,7 @@ public class Queue {
     }
 
     protected void contentOfQueueArray() {
-        for (int i = front; i == queArray.length-1; i++) {
+         for (int i = front; i == queArray.length-1; i++) {
             System.out.println(queArray[i]);
 
         }
