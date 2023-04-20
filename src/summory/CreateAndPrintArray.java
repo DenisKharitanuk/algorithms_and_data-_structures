@@ -49,7 +49,7 @@ public class CreateAndPrintArray {
         double minNumber=array[0][0];
         for (int i = arrLength-1; i >= 0; i--){
 
-            if((array[i][secondaryCounter]<minNumber) && (i==secondaryCounter) ){
+            if((array[i][secondaryCounter]<minNumber) && (i!=secondaryCounter) ){
                 minNumber=array[i][secondaryCounter];
             }
             secondaryCounter++;
