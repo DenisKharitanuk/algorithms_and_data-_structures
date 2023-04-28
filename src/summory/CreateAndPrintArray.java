@@ -24,10 +24,10 @@ public class CreateAndPrintArray {
     }
 
     private double randomNumbersGenerator(double min, double max) {
-        double randomNubmber = (Math.random() *
+        double randomNumber = (Math.random() *
                 (max - min)) + min;
         double scale = Math.pow(10, 2);
-        double result = Math.ceil(randomNubmber * scale) / scale;
+        double result = Math.ceil(randomNumber * scale) / scale;
         return result;
     }
 
@@ -46,7 +46,7 @@ public class CreateAndPrintArray {
 
     public void lookingForAndDisplayMinimumSideDiagonalElement() {
         int secondaryCounter=0;
-        double minNumber=array[0][0];
+        double minNumber=array[arrLength-1][0];
         for (int i = arrLength-1; i >= 0; i--){
 
             if((array[i][secondaryCounter]<minNumber) && (i!=secondaryCounter) ){
