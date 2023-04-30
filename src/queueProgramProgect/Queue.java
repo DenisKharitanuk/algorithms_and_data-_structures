@@ -1,4 +1,4 @@
-package queueHW;
+package queueProgramProgect;
 
 public class Queue {
     private int maxSize;
@@ -19,8 +19,8 @@ public class Queue {
         if (rear == maxSize - 1) {
             rear = -1;
         }
-        queArray[++rear] = j;
-        nItems++;
+            queArray[++rear] = j;
+            nItems++;
 
     }
 
@@ -49,19 +49,16 @@ public class Queue {
         return nItems;
     }
 
-    protected void contentOfQueueArray() {
-         for (int i = front; i == queArray.length-1; i++) {
-            System.out.println(queArray[i]);
-
+    protected void arraysCountent(){
+       while (nItems!=0){
+           System.out.println(peakFront());
+            remove();
         }
-        if (rear>front){
-            for (int i = 0 ; i ==rear;i++){
-                System.out.print(queArray[i]+" ");
-            }
 
-        }
 
     }
+
+
 }
 
 

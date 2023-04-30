@@ -1,4 +1,4 @@
-package queueHW;
+package queueProgramProgect;
 
 public class App {
     public static void main(String[] args) {
@@ -18,13 +18,13 @@ public class App {
         theQueue.insert(70);
         theQueue.insert(80);
 
-//        while ( !theQueue.isEmpty()){
-//            int n = theQueue.remove();
-//            System.out.print(n);
-//            System.out.print(" ");
-//        }
-//        System.out.print(" ");
+        theQueue.arraysCountent();
 
-        theQueue.contentOfQueueArray();
+        while ( !theQueue.isEmpty()){
+            int n = theQueue.remove();
+            System.out.print(n);
+            System.out.print(" ");
+        }
+        System.out.print(" ");
     }
 }
