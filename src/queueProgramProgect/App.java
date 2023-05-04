@@ -18,13 +18,14 @@ public class App {
         theQueue.insert(70);
         theQueue.insert(80);
 
+
         theQueue.arraysCountent();
 
-        while ( !theQueue.isEmpty()){
-            int n = theQueue.remove();
-            System.out.print(n);
-            System.out.print(" ");
-        }
-        System.out.print(" ");
+//        while ( !theQueue.isEmpty()){
+//            int n = theQueue.remove();
+//            System.out.print(n);
+//            System.out.print(" ");
+//        }
+//        System.out.print(" ");
     }
 }

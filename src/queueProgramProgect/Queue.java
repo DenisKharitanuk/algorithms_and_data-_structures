@@ -50,10 +50,18 @@ public class Queue {
     }
 
     protected void arraysCountent(){
-       while (nItems!=0){
-           System.out.println(peakFront());
-            remove();
-        }
+        int a = maxSize;
+        int b  = front;
+     while (a!=0){
+        int   arrayCount = queArray[b++];
+         if(b ==maxSize){
+             b=0;
+         }
+         a--;
+         System.out.println( arrayCount );
+
+     }
+
 
 
     }
