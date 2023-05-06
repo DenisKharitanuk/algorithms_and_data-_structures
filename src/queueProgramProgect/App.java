@@ -21,11 +21,14 @@ public class App {
 
         theQueue.arraysCountent();
 
-//        while ( !theQueue.isEmpty()){
-//            int n = theQueue.remove();
-//            System.out.print(n);
-//            System.out.print(" ");
-//        }
-//        System.out.print(" ");
+        while ( !theQueue.isEmpty()){
+            int n = theQueue.remove();
+            System.out.print(n);
+            System.out.print(" ");
+        }
+        System.out.print(" ");
+
+
+
     }
 }
