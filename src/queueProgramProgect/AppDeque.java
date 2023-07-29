@@ -3,11 +3,11 @@ package queueProgramProgect;
 public class AppDeque {
     public static void main(String[] args) {
         Deque theDeque = new Deque(6);
-        theDeque.insertRight(1);
-        theDeque.insertRight(2);
-        theDeque.insertRight(3);
-        theDeque.insertRight(4);
-        theDeque.insertRight(5);
+        theDeque.insertLeft(1);
+        theDeque.insertLeft(2);
+        theDeque.insertLeft(3);
+        theDeque.insertLeft(4);
+        theDeque.insertLeft(5);
 
         theDeque.removeLeft();
         theDeque.removeLeft();
